@@ -1,0 +1,25 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title DanceDilSe.com - #{title}
+    block scripts
+    //-   script(src='/jquery.js')
+    block style
+  body
+    #logo 
+        img(src="/static/logo.png", alt="logo")
+    nav#navbar 
+        ul
+            li #[a(href='/') Home]
+            li #[a(href='/about') About]
+            li #[a(href='/services') Services]
+            li #[a(href='/contact') Contact Us]
+            li #[a(href='/more') More]
+    block content
+        
+    //- block foot
+    footer
+        | Copyright ©️ 2022 | DanceDilSe.com | All rights reserved

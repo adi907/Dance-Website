@@ -1,0 +1,51 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title DanceDilSe
+        link(rel="stylesheet", href="/static/style.css")
+            style
+                
+
+    body 
+        #logo 
+            img(src="/static/logo.png", alt="logo")
+        nav#navbar 
+            ul
+                li #[a(href='/') Home]
+                li #[a(href='/about') About]
+                li #[a(href='/services') Services]
+                li #[a(href='/contact') Contact Us]
+                li #[a(href='/more') More]
+
+        section#intro 
+            .big DANCE DIL SE
+            .small  DANCE LIKE NO ONE IS WATCHING 
+        
+
+
+        section#mission
+            h2 OUR MISSION
+
+            .quote#quote1 “ To promote self-confidence and
+            .quote#quote2 Love of dance in a nurturing, professional environment ”
+
+        section#sponsor
+            h2 OUR  SPONSORS
+            .cards 
+                .item#apple
+                    img(src="/static/logo1.png", alt="apple logo")
+                .item
+                    img(src="/static/logo2.png", alt="skype logo")
+                .item
+                    img(src="/static/logo3.png", alt="microsoft logo")
+                .item#hp
+                    img(src="/static/logo4.png", alt="hp logo")
+        
+        footer
+            | Copyright ©️ 2022 | DanceDilSe.com | All rights reserved
+
+        script
+            include ../public/script.js

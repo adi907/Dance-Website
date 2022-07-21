@@ -1,0 +1,33 @@
+extends base.pug
+
+block scripts 
+    script(src="/static/script.js") 
+
+block style
+    //- link(rel="stylesheet", href="/static/style.css") anyone works
+    style 
+        include ../public/style.css
+
+block content
+    
+    section#intro 
+        .big DANCE DIL SE
+        .small  DANCE LIKE NO ONE IS WATCHING 
+    
+    section#mission
+        h2 OUR MISSION
+        .quote#quote1 “ To promote self-confidence and
+        .quote#quote2 Love of dance in a nurturing, professional environment ”
+    section#sponsor
+        h2 OUR  SPONSORS
+        .cards 
+            .item#apple
+                img(src="/static/logo1.png", alt="apple logo")
+            .item
+                img(src="/static/logo2.png", alt="skype logo")
+            .item
+                img(src="/static/logo3.png", alt="microsoft logo")
+            .item#hp
+                img(src="/static/logo4.png", alt="hp logo")
+        
+    //- footer included directly in base.pug

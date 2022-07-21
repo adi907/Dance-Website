@@ -1,0 +1,25 @@
+extends base.pug
+
+block scripts 
+    script(src="/static/script.js") 
+
+block style
+    link(rel="stylesheet", href="/static/style_contact.css")
+
+block content
+
+    .container 
+        h1 CONTACT US
+
+        form(action="/contact", method="post", class="myForm" ) 
+            input(type="text", class="myInput", name="name", placeholder="Enter your name")
+            input(type="phone", class="myInput", name="phone", placeholder="Enter your phone no.")
+            input(type="email", class="myInput", name="email", placeholder="Enter your Email")
+            input(type="text", class="myInput", name="address", placeholder="Enter your Address")
+            input(type="text", class="myInput", name="desc", placeholder="Any Queries")
+
+            button#btn
+                | Submit
+
+
+//- footer already included in base.pug
